@@ -10,7 +10,7 @@ export default {
   printWidth: 80,
   arrowParens: 'always',
   proseWrap: 'always',
-  endOfLine: 'lf',
+  endOfLine: 'auto',
   experimentalTernaries: false,
   tabWidth: 2,
   useTabs: false,

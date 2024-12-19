@@ -26,7 +26,7 @@ export default defineConfig(({ mode }: ConfigEnv) => {
       extensions: ['.js', '.json', '.ts', '.vue'], // 使用路径别名时想要省略的后缀名
     },
     server: {
-      port: 5173,
+      port: 9999,
       proxy: {
         '/api': {
           target: env.VITE_BASE_API_URL,
