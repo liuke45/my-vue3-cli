@@ -1,25 +1,14 @@
 <template>
-  <div class="index">
-    <span>当前数值{{ countComputed }}</span>
-    <br />
-    <span>双倍数值{{ doubleCount }}</span>
-    <br />
-    <el-button type="primary" size="default" @click="countStore.countAdd">
-      +1
-    </el-button>
-    <el-button type="primary" size="default" @click="countStore.countAdd">
-      -1
-    </el-button>
-  </div>
+  <div class="p-5">home</div>
+  <el-button @click="goToTest">go to test</el-button>
 </template>
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useCountStore } from '@/store'
-import { storeToRefs } from 'pinia'
-const countStore = useCountStore()
-// 通过计算属性
-const countComputed = computed(() => countStore.count)
-// 通过 storeToRefs api 结构
-const { doubleCount } = storeToRefs(countStore)
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const goToTest = () => {
+  router.push('/test')
+}
 </script>
 <style scoped></style>

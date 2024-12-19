@@ -1,0 +1,95 @@
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  background-clip: padding-box;
+}
+
+*:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(25 25 25 / 15%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #909090;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 6px;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 6px;
+  border-radius: 30px;
+}
+
+div {
+  /* 火狐 */
+
+ /* webkit浏览器 */
+
+ /* IE10 */
+
+ /* 早期浏览器 */
+
+  /* user-select: none; */
+}
+
+/* input 样式 */
+
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* number类型input输入框去掉箭头 start */
+
+/* chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+/* 火狐浏览器 */
+input[type='number'] {
+  appearance: textfield;
+}
+
+a {
+  text-decoration: none;
+  backface-visibility: hidden;
+}
+
+.dlz-modal-title {
+  font-weight: bold;
+}
+
+.dlz-modal-footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+body {
+  overflow: hidden;
+}
+
+.vue-puzzle-vcode {
+  z-index: 9999 !important;
+}
+
+* {
+  outline: none;
+}

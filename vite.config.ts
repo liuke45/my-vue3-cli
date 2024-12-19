@@ -4,6 +4,7 @@ import { resolve } from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import tailwindcss from 'tailwindcss'
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }: ConfigEnv) => {
@@ -33,6 +34,11 @@ export default defineConfig(({ mode }: ConfigEnv) => {
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, ''),
         },
+      },
+    },
+    css: {
+      postcss: {
+        plugins: [tailwindcss()],
       },
     },
   }
